@@ -1,0 +1,426 @@
+
+{
+  "latestMigration": "20171226132806_gpio_triggers",
+  "rootId": "PyWce6LYTuAjBHmnZ",
+  "rootIsGroup": false,
+  "version": 1,
+  "processGroups": [],
+  "processVersionSets": [
+    {
+      "_id": "PyWce6LYTuAjBHmnZ",
+      "name": "Machine Dashboard - V3 (Copy)",
+      "order": 1,
+      "group": "eY9A9zDuy8wBhAWAh",
+      "steps": [],
+      "versions": [
+        {
+          "process": "C5xcaPbyZtbgKcYHt"
+        }
+      ],
+      "tags": {
+        "dev": {
+          "name": "Development",
+          "process": "C5xcaPbyZtbgKcYHt"
+        }
+      },
+      "dashboard_id": "2KANyDqCCf4dhTF4m",
+      "created_by": "MviJw8dy4F7ziyHoj",
+      "created_at": 1540499860295,
+      "last_edited_by": "MviJw8dy4F7ziyHoj",
+      "last_edited": 1540500511225,
+      "first_completion_time": 1539182329845,
+      "last_completion_time": 1540499835080,
+      "is_machine_process": true
+    }
+  ],
+  "processes": [
+    {
+      "_id": "C5xcaPbyZtbgKcYHt",
+      "steps": [
+        "8r6Z58TyiLCsYCPQh",
+        "K2KCEoqtBmoYafxjd"
+      ],
+      "master": "HLSWEycM5LMBQXRWt",
+      "screenshotsInitializedOnce": true,
+      "last_edited_by": "MviJw8dy4F7ziyHoj",
+      "last_edited": 1540500511225,
+      "width": 1920,
+      "height": 1200
+    }
+  ],
+  "variables": [
+    {
+      "_id": "RAkQ5EvfX4KyRNfXb",
+      "process": "C5xcaPbyZtbgKcYHt",
+      "name": "date",
+      "type": {
+        "today": "string"
+      },
+      "persistent": true,
+      "variable_version_set": "FoTpuJeK8ZTDCaRQe"
+    }
+  ],
+  "stepGroups": [],
+  "steps": [
+    {
+      "_id": "HLSWEycM5LMBQXRWt",
+      "master": true,
+      "background_color": "rgb(33, 33, 33)",
+      "name": "Master Layout",
+      "takt_time": 60,
+      "step_version_set": "x4PKGrzrDs6zJ5vtL",
+      "widgets": [
+        "4Mbm3swtNDEPMpLJz",
+        "LzXSHAB6Ktt7W2Mmp",
+        "toy4yzp3u3SaGvfxx",
+        "79WCcWDpFcJSba3CF"
+      ],
+      "triggers": [
+        "vFPJ2FBj2nt4GKToL"
+      ]
+    },
+    {
+      "_id": "8r6Z58TyiLCsYCPQh",
+      "name": "All Zones",
+      "takt_time": 60,
+      "step_version_set": "ooFZHLgvw9Ls3dQNe",
+      "triggers": [
+        "Mt7E27EM2XxkopHcX"
+      ],
+      "widgets": [],
+      "screenshot": {
+        "s3ScreenshotKey": "tiffany-machines/StepScreenshotService/noz5Cu9jxcDuifabb/Y8x2hNh9KJX6PCnro/AkHuePaprBESNhHpe/66EaRsR3ZyxLpWjqZ-screenshot",
+        "s3ThumbnailKey": "tiffany-machines/StepScreenshotService/noz5Cu9jxcDuifabb/Y8x2hNh9KJX6PCnro/AkHuePaprBESNhHpe/66EaRsR3ZyxLpWjqZ-thumbnail"
+      },
+      "exclude": [
+        "TAns3orZPauRK3Bne",
+        "DZyrNshNk7BPtKpsj",
+        "HZwzC6En6RQL9sm7p",
+        "Jfri5u2hsYqHPiktF",
+        "WPriWZrbcW7cQLqBt",
+        "ZvxQqvSDNgBE9R4Jj",
+        "tvYC5v4kdbpxcATBK",
+        "r3BC25h7djWgZdCDG",
+        "jeaanNZXR9QnM7HFL",
+        "ocJG8HugzGG6rM2bt",
+        "MERCJH9xCyRDtfGxK",
+        "Wb7aSeHsdzRDtHApE",
+        "DsRrKdzcT44ZWL4PC",
+        "X6z4fZgTCPQXtev2m",
+        "St7WQpFwejdtge7Eq",
+        "zXHt6Dwb7BHtoWzxM",
+        "FNvTz3WWyBrrdHpGp"
+      ],
+      "diverged": true,
+      "note": ""
+    },
+    {
+      "_id": "K2KCEoqtBmoYafxjd",
+      "name": "Updating...",
+      "takt_time": 60,
+      "step_version_set": "b7EMBgBoheT979uMh",
+      "triggers": [
+        "sDzhcn5fxy3A22a8s",
+        "naaJdrPfQeDedtCfq",
+        "in2d2ogfcwzi3AM47"
+      ],
+      "screenshot": {
+        "s3ScreenshotKey": "tiffany-machines/StepScreenshotService/FbF4mEFz8y7LATAuz/YudRk9m2LrriuuDWW/jcM5t8RNoCHsnf2hH/oXhz5xj8SxzEpHKEY-screenshot",
+        "s3ThumbnailKey": "tiffany-machines/StepScreenshotService/FbF4mEFz8y7LATAuz/YudRk9m2LrriuuDWW/jcM5t8RNoCHsnf2hH/oXhz5xj8SxzEpHKEY-thumbnail"
+      }
+    }
+  ],
+  "widgets": [
+    {
+      "_id": "4Mbm3swtNDEPMpLJz",
+      "left": 0.007736632227897644,
+      "top": -6.920025441559119e-9,
+      "type": "variable_formattable",
+      "widget_version_set": "bDxoc2kK85dicTZcK",
+      "variable": "stepName",
+      "font_size": 40,
+      "vert_align": "middle",
+      "horiz_align": "left",
+      "height": 0.05000000645716985,
+      "width": 0.11144604682922363,
+      "font_color": "rgb(97, 97, 97)"
+    },
+    {
+      "_id": "79WCcWDpFcJSba3CF",
+      "left": 0.4205891562704577,
+      "top": 0.01613769874368441,
+      "type": "image",
+      "widget_version_set": "vxycZwEv6rr2EmEkd",
+      "width": 0.1588268369436264,
+      "height": 0.0198140410444524,
+      "src": "https://s3.amazonaws.com/co.tulip.factory/tiffany/images/XtkCvGGdGptbnE9DW_201802global_world_jewelrytiffany_png?AWSAccessKeyId=AKIAICWUOIQI45ZOQW7Q&Expires=2145915900&Signature=SXmRFuj7oig9mzh%2ByPCAONc2RJo%3D",
+      "original_aspect_ratio": 8.015873015873016
+    },
+    {
+      "_id": "LzXSHAB6Ktt7W2Mmp",
+      "left": 0.688057009379069,
+      "top": 1.4829556249651433e-9,
+      "type": "variable_formattable",
+      "widget_version_set": "L9CuoXEdZmZbcNBhM",
+      "variable": "RAkQ5EvfX4KyRNfXb",
+      "font_size": 40,
+      "vert_align": "middle",
+      "horiz_align": "right",
+      "height": 0.05000000645716985,
+      "width": 0.2405132532119751,
+      "font_color": "rgb(97, 97, 97)",
+      "subField": [
+        "today"
+      ]
+    },
+    {
+      "_id": "toy4yzp3u3SaGvfxx",
+      "left": 0.9285702387491862,
+      "top": -3.689113725613424e-9,
+      "type": "button",
+      "widget_version_set": "a2Pvz2yJjFPTw7sJ9",
+      "text": "",
+      "color": "rgb(33, 33, 33)",
+      "font_color": "rgb(255, 255, 255)",
+      "left_icon_class": "icon-menu",
+      "triggers": [
+        "BRRajzi89p6aCghmY"
+      ],
+      "width": 0.0714297334353129,
+      "height": 0.04895833333333333
+    }
+  ],
+  "triggers": [
+    {
+      "_id": "BRRajzi89p6aCghmY",
+      "clauses": [
+        {
+          "_id": "GZvpqP7ZXnjqmv2K4",
+          "type": "and",
+          "conditions": [],
+          "actions": [
+            {
+              "_id": "f2eBCHeKY5KP9SM5Y",
+              "input_values": [],
+              "type": "open_menu"
+            }
+          ]
+        }
+      ],
+      "event": {
+        "_id": "xD7HJzgko5xmt27AH",
+        "type": "button_press"
+      },
+      "description": "Open Menu"
+    },
+    {
+      "_id": "Mt7E27EM2XxkopHcX",
+      "clauses": [
+        {
+          "_id": "j6DgiQiMZcAe4enYw",
+          "type": "and",
+          "conditions": [
+            {
+              "_id": "Av2LCxqcWF8ncd5uW",
+              "input_values": [
+                {
+                  "datasourceType": "variable",
+                  "variableId": "RAkQ5EvfX4KyRNfXb",
+                  "path": [
+                    "today"
+                  ],
+                  "valueType": {
+                    "baseType": "string",
+                    "isReadable": true,
+                    "isWritable": false
+                  }
+                }
+              ],
+              "type": "is_blank"
+            }
+          ],
+          "actions": [
+            {
+              "_id": "hFzBAwYd86oRTqNoj",
+              "input_values": [
+                {
+                  "datasourceType": "step",
+                  "valueType": {
+                    "isReadable": true,
+                    "isWritable": false,
+                    "baseType": "step"
+                  },
+                  "stepId": "K2KCEoqtBmoYafxjd"
+                }
+              ],
+              "type": "go_to_step"
+            }
+          ]
+        }
+      ],
+      "description": "Get Data if Blank",
+      "event": {
+        "_id": "Le6o665KnWDhs2S8Z",
+        "type": "step_open"
+      }
+    },
+    {
+      "_id": "in2d2ogfcwzi3AM47",
+      "clauses": [
+        {
+          "_id": "mjZJQ6iq2F8PP6CYu",
+          "type": "and",
+          "conditions": [],
+          "actions": [
+            {
+              "_id": "KAXnMwmASKCXNwHtC",
+              "input_values": [
+                {
+                  "datasourceType": "step",
+                  "valueType": {
+                    "isReadable": true,
+                    "isWritable": false,
+                    "baseType": "step"
+                  },
+                  "stepId": "8r6Z58TyiLCsYCPQh"
+                }
+              ],
+              "type": "go_to_step"
+            }
+          ]
+        }
+      ],
+      "description": "Return",
+      "event": {
+        "_id": "hnCJa47rH8vrEzpWG",
+        "type": "step_open"
+      }
+    },
+    {
+      "_id": "naaJdrPfQeDedtCfq",
+      "clauses": [
+        {
+          "_id": "3v2iMtBEzjNJFv8ed",
+          "type": "and",
+          "conditions": [],
+          "actions": [
+            {
+              "_id": "mjTHzRFqHmH4dL6z6",
+              "input_values": [
+                {
+                  "datasourceType": "connector",
+                  "valueType": {
+                    "isReadable": true,
+                    "isWritable": false,
+                    "baseType": "connectorValue"
+                  },
+                  "connectorId": "poNDGgpb3rpctyk3Q",
+                  "functionId": "ZHBJpn4WR85kiQjCB"
+                },
+                {
+                  "datasourceType": "variable",
+                  "variableId": "RAkQ5EvfX4KyRNfXb",
+                  "path": [],
+                  "valueType": {
+                    "baseType": {
+                      "today": "string"
+                    },
+                    "isReadable": true,
+                    "isWritable": true
+                  }
+                }
+              ],
+              "type": "run_connector_function"
+            }
+          ]
+        }
+      ],
+      "description": "Get Date",
+      "event": {
+        "_id": "CpQtnqE3Tfei77v2N",
+        "type": "step_open"
+      }
+    },
+    {
+      "_id": "sDzhcn5fxy3A22a8s",
+      "clauses": [
+        {
+          "_id": "Sq9xj6PfbSzkqLeG9",
+          "type": "and",
+          "conditions": [],
+          "actions": []
+        }
+      ],
+      "description": "Update",
+      "event": {
+        "_id": "eBDn8bNcvXEouekm5",
+        "type": "step_open"
+      }
+    },
+    {
+      "_id": "vFPJ2FBj2nt4GKToL",
+      "clauses": [
+        {
+          "_id": "r2nmmp2zAQpd2yHqy",
+          "type": "and",
+          "conditions": [],
+          "actions": [
+            {
+              "_id": "CDAGBGYdJRTJt2ArC",
+              "input_values": [],
+              "type": "complete_process"
+            },
+            {
+              "_id": "CkNGAcWvnPBC7AR9A",
+              "input_values": [
+                {
+                  "datasourceType": "step",
+                  "valueType": {
+                    "isReadable": true,
+                    "isWritable": false,
+                    "baseType": "step"
+                  },
+                  "stepId": "K2KCEoqtBmoYafxjd"
+                }
+              ],
+              "type": "go_to_step"
+            }
+          ]
+        }
+      ],
+      "event": {
+        "_id": "qan9hugCLdCnfLPzc",
+        "type": "interval",
+        "args": {
+          "interval": 30
+        }
+      },
+      "description": "Complete and Update Data"
+    }
+  ],
+  "analyses": [],
+  "dashboards": [
+    {
+      "_id": "2KANyDqCCf4dhTF4m",
+      "columns": [
+        {
+          "width": 8,
+          "items": [],
+          "_id": "jvBSMWLycvjp4zqtm"
+        },
+        {
+          "width": 8,
+          "items": [],
+          "_id": "C5WXrk4JfSZ9y5z37"
+        },
+        {
+          "width": 8,
+          "items": [],
+          "_id": "W8Z2f4evSSaBoGLRC"
+        }
+      ],
+      "min_column_width": 4,
+      "number_columns_in_grid": 24
+    }
+  ]
+}

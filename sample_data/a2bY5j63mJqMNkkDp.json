@@ -1,0 +1,650 @@
+{
+    "latestMigration": "20171226132806_gpio_triggers",
+    "rootId": "sZ4tnMDykp9cAXjYx",
+    "rootIsGroup": false,
+    "version": 1,
+    "processGroups": [],
+    "processVersionSets": [
+        {
+            "_id": "sZ4tnMDykp9cAXjYx",
+            "name": "Machine Dashboard DEV",
+            "order": 1,
+            "group": "fp3CGvEbEEh4oNLGw",
+            "steps": [],
+            "versions": [
+                {
+                    "process": "wP5vs5w9ecDnyE7cb"
+                }
+            ],
+            "tags": {
+                "dev": {
+                    "name": "Development",
+                    "process": "wP5vs5w9ecDnyE7cb"
+                }
+            },
+            "dashboard_id": "2eGkirkttb8XRYRdG",
+            "created_by": "MviJw8dy4F7ziyHoj",
+            "created_at": 1540226205638,
+            "last_edited_by": "MviJw8dy4F7ziyHoj",
+            "last_edited": 1540251798472,
+            "first_completion_time": 1539182329845,
+            "last_completion_time": 1540226187063,
+            "is_machine_process": true
+        }
+    ],
+    "processes": [
+        {
+            "_id": "wP5vs5w9ecDnyE7cb",
+            "steps": ["R48b8QRWWtxfyuAe5", "s6kikERLEwac5a7KG"],
+            "master": "ArNLm7AJSZH7RSpK4",
+            "screenshotsInitializedOnce": true,
+            "last_edited_by": "MviJw8dy4F7ziyHoj",
+            "last_edited": 1540251798472,
+            "width": 1920,
+            "height": 1200
+        }
+    ],
+    "variables": [
+        {
+            "_id": "aWfuB9FPWBnod63NE",
+            "process": "wP5vs5w9ecDnyE7cb",
+            "name": "date",
+            "type": {
+                "today": "string"
+            },
+            "persistent": true,
+            "variable_version_set": "WJrE8jcn4CYeYx92P"
+        },
+        {
+            "_id": "7FgSoNJhZbBWwy2ip",
+            "process": "wP5vs5w9ecDnyE7cb",
+            "name": "blank_square",
+            "type": {
+                "blank_square": "imageUrl"
+            },
+            "persistent": true,
+            "variable_version_set": "zx6hJuGbXpJd7PQnv"
+        },
+        {
+            "_id": "ZyTw2BjgSCBvdcizw",
+            "process": "wP5vs5w9ecDnyE7cb",
+            "name": "FH1436",
+            "type": {
+                "state": "string",
+                "color": "string",
+                "start_time": "string",
+                "main_program": "string",
+                "active_program": "string",
+                "comment": "string",
+                "duration": "string",
+                "utilization": "string",
+                "name": "string",
+                "color2": "imageUrl",
+                "asset_id": "string"
+            },
+            "persistent": true,
+            "variable_version_set": "mweqkYFFz7gYMSt6A"
+        },
+        {
+            "_id": "A6J8qnPbpC9fX6fs5",
+            "process": "wP5vs5w9ecDnyE7cb",
+            "name": "FH1537",
+            "type": {
+                "state": "string",
+                "color": "string",
+                "start_time": "string",
+                "main_program": "string",
+                "active_program": "string",
+                "comment": "string",
+                "duration": "string",
+                "utilization": "string",
+                "name": "string",
+                "color2": "imageUrl",
+                "asset_id": "string"
+            },
+            "persistent": false,
+            "variable_version_set": "NxzTGjDkZKPhhdwiB"
+        }
+    ],
+    "stepGroups": [],
+    "steps": [
+        {
+            "_id": "ArNLm7AJSZH7RSpK4",
+            "master": true,
+            "background_color": "rgb(97, 97, 97)",
+            "name": "Master Layout",
+            "takt_time": 60,
+            "step_version_set": "rQ6iHd72eKjAAdbsK",
+            "widgets": [
+                "c7cnG7zsdZHqSm5zw",
+                "w6DnvybGCZWtDDkub",
+                "WAXSwsmpxhsmqCzgD",
+                "5C5npQjnr5oZ8eTtm",
+                "sMZcqiv9duR23x3NA",
+                "KGczdK2josjwLKkBh",
+                "k7EoMvSTY6tdQ8HMt"
+            ],
+            "triggers": ["4zGfRGzihXW8nYytS"]
+        },
+        {
+            "_id": "R48b8QRWWtxfyuAe5",
+            "name": "All Zones",
+            "takt_time": 60,
+            "step_version_set": "PP36qEzy3LYTdkrWD",
+            "triggers": ["2EYNgo6D6Zm5fqNMs", "iQQuqYWEkDRXSbdFB"],
+            "widgets": [],
+            "screenshot": {
+                "s3ScreenshotKey": "tiffany-machines/StepScreenshotService/FbF4mEFz8y7LATAuz/YudRk9m2LrriuuDWW/ibGs7jWdxnhnWTQBX/rZKiFCJggHh5jhR98-screenshot",
+                "s3ThumbnailKey": "tiffany-machines/StepScreenshotService/FbF4mEFz8y7LATAuz/YudRk9m2LrriuuDWW/ibGs7jWdxnhnWTQBX/rZKiFCJggHh5jhR98-thumbnail"
+            },
+            "exclude": [
+                "TAns3orZPauRK3Bne",
+                "DZyrNshNk7BPtKpsj",
+                "HZwzC6En6RQL9sm7p",
+                "Jfri5u2hsYqHPiktF",
+                "WPriWZrbcW7cQLqBt",
+                "ZvxQqvSDNgBE9R4Jj",
+                "tvYC5v4kdbpxcATBK",
+                "r3BC25h7djWgZdCDG",
+                "jeaanNZXR9QnM7HFL",
+                "ocJG8HugzGG6rM2bt",
+                "MERCJH9xCyRDtfGxK",
+                "Wb7aSeHsdzRDtHApE",
+                "DsRrKdzcT44ZWL4PC",
+                "X6z4fZgTCPQXtev2m",
+                "St7WQpFwejdtge7Eq",
+                "zXHt6Dwb7BHtoWzxM",
+                "FNvTz3WWyBrrdHpGp"
+            ],
+            "diverged": true,
+            "note": ""
+        },
+        {
+            "_id": "s6kikERLEwac5a7KG",
+            "name": "Updating...",
+            "takt_time": 60,
+            "step_version_set": "W7u4xpXdocafKibex",
+            "triggers": [
+                "3YshcEif4Y77rqcQx",
+                "3C4Zc6DYrXy8w7NSh",
+                "xbnCRSTqaiRJKxuPZ"
+            ],
+            "screenshot": {
+                "s3ScreenshotKey": "tiffany-machines/StepScreenshotService/FbF4mEFz8y7LATAuz/YudRk9m2LrriuuDWW/jcM5t8RNoCHsnf2hH/oXhz5xj8SxzEpHKEY-screenshot",
+                "s3ThumbnailKey": "tiffany-machines/StepScreenshotService/FbF4mEFz8y7LATAuz/YudRk9m2LrriuuDWW/jcM5t8RNoCHsnf2hH/oXhz5xj8SxzEpHKEY-thumbnail"
+            }
+        }
+    ],
+    "widgets": [
+        {
+            "_id": "5C5npQjnr5oZ8eTtm",
+            "left": 0.013009249431933373,
+            "top": 0.14936454765051294,
+            "type": "variable_formattable",
+            "widget_version_set": "DFwGEyQtcDFfswWZ4",
+            "font_size": 40,
+            "width": 0.14314171572526296,
+            "height": 0.028645833333333332,
+            "font_color": "#182339",
+            "variable": "ZyTw2BjgSCBvdcizw",
+            "subField": ["duration"]
+        },
+        {
+            "_id": "KGczdK2josjwLKkBh",
+            "left": 0.00832177350918452,
+            "top": 8.451281511649237e-9,
+            "type": "variable_formattable",
+            "widget_version_set": "h56T3MZJTzDqpnzLN",
+            "variable": "stepName",
+            "font_size": 40,
+            "vert_align": "middle",
+            "horiz_align": "left",
+            "height": 0.04246419221162796,
+            "width": 0.11144604682922363,
+            "font_color": "#182339"
+        },
+        {
+            "_id": "WAXSwsmpxhsmqCzgD",
+            "left": 0.013009249431933373,
+            "top": 0.09207288098384628,
+            "type": "variable_formattable",
+            "widget_version_set": "PQeJ3YuFZj5SZHrvq",
+            "font_size": 40,
+            "width": 0.14314171572526296,
+            "height": 0.028645833333333332,
+            "font_color": "#182339",
+            "variable": "ZyTw2BjgSCBvdcizw",
+            "subField": ["name"]
+        },
+        {
+            "_id": "c7cnG7zsdZHqSm5zw",
+            "left": -0.00025772700707117776,
+            "top": 0.04246420462926229,
+            "type": "variable_formattable",
+            "widget_version_set": "zBZenP33QDrTeyNiF",
+            "font_size": 40,
+            "width": 0.15640868246555326,
+            "height": 0.14096434364716212,
+            "font_color": "#182339",
+            "variable": "ZyTw2BjgSCBvdcizw",
+            "subField": ["color2"]
+        },
+        {
+            "_id": "k7EoMvSTY6tdQ8HMt",
+            "left": 0.11456566651662191,
+            "top": 0.005786902396972476,
+            "type": "callout",
+            "widget_version_set": "BFZWucH7bpzpGqyEH",
+            "shape": "refresh",
+            "width": 0.03190764884154002,
+            "height": 0.03190764884154002,
+            "color": "rgb(242, 242, 242)"
+        },
+        {
+            "_id": "sMZcqiv9duR23x3NA",
+            "left": 0.013009281221077246,
+            "top": 0.046474803209798445,
+            "type": "variable_formattable",
+            "widget_version_set": "D4Sh7SjoiF4vxKMKP",
+            "font_size": 40,
+            "width": 0.14314166804154713,
+            "height": 0.028645833333333332,
+            "font_color": "rgb(255, 255, 255)",
+            "variable": "ZyTw2BjgSCBvdcizw",
+            "subField": ["asset_id"],
+            "font_bold": true
+        },
+        {
+            "_id": "w6DnvybGCZWtDDkub",
+            "left": 0.013009249431933373,
+            "top": 0.12071873021175156,
+            "type": "variable_formattable",
+            "widget_version_set": "dctPxbjwWH9fMtcF7",
+            "font_size": 40,
+            "width": 0.1431416680415471,
+            "height": 0.028645833333333332,
+            "font_color": "rgb(0, 0, 0)",
+            "variable": "ZyTw2BjgSCBvdcizw",
+            "subField": ["state"]
+        }
+    ],
+    "triggers": [
+        {
+            "_id": "2EYNgo6D6Zm5fqNMs",
+            "clauses": [
+                {
+                    "_id": "88YtTehCzPuq8MQbu",
+                    "type": "and",
+                    "conditions": [],
+                    "actions": [
+                        {
+                            "_id": "3BsrL3RZLxSPubppW",
+                            "type": "run_connector_function",
+                            "input_values": [
+                                {
+                                    "datasourceType": "connector",
+                                    "valueType": {
+                                        "isReadable": true,
+                                        "isWritable": false,
+                                        "baseType": "connectorValue"
+                                    },
+                                    "connectorId": "poNDGgpb3rpctyk3Q",
+                                    "functionId": "ZHBJpn4WR85kiQjCB"
+                                },
+                                {
+                                    "datasourceType": "variable",
+                                    "variableId": "aWfuB9FPWBnod63NE",
+                                    "path": [],
+                                    "valueType": {
+                                        "baseType": {
+                                            "today": "string"
+                                        },
+                                        "isReadable": true,
+                                        "isWritable": true
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "description": "Set Defaults",
+            "event": {
+                "_id": "scEF7sXFrnEBZwreT",
+                "type": "step_open"
+            }
+        },
+        {
+            "_id": "3C4Zc6DYrXy8w7NSh",
+            "clauses": [
+                {
+                    "_id": "xdB6srPqWutaYP6F6",
+                    "type": "and",
+                    "conditions": [
+                        {
+                            "_id": "EmTY8qM77GCfSDAWE",
+                            "input_values": [
+                                {
+                                    "datasourceType": "variable",
+                                    "variableId": "ZyTw2BjgSCBvdcizw",
+                                    "path": ["color2"],
+                                    "valueType": {
+                                        "baseType": "imageUrl",
+                                        "isReadable": true,
+                                        "isWritable": false
+                                    }
+                                }
+                            ],
+                            "type": "is_blank"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "_id": "xaLLwHarMbBysb2st",
+                            "input_values": [
+                                {
+                                    "datasourceType": "variable",
+                                    "variableId": "7FgSoNJhZbBWwy2ip",
+                                    "path": ["blank_square"],
+                                    "valueType": {
+                                        "baseType": "imageUrl",
+                                        "isReadable": true,
+                                        "isWritable": false
+                                    }
+                                },
+                                {
+                                    "datasourceType": "variable",
+                                    "variableId": "ZyTw2BjgSCBvdcizw",
+                                    "path": ["color2"],
+                                    "valueType": {
+                                        "baseType": "imageUrl",
+                                        "isReadable": false,
+                                        "isWritable": true
+                                    }
+                                }
+                            ],
+                            "type": "store_in_var"
+                        }
+                    ]
+                }
+            ],
+            "description": "Set blank squares",
+            "event": {
+                "_id": "Wy9j6jEsoh2B78LuZ",
+                "type": "step_open"
+            }
+        },
+        {
+            "_id": "3YshcEif4Y77rqcQx",
+            "clauses": [
+                {
+                    "_id": "Sq9xj6PfbSzkqLeG9",
+                    "type": "and",
+                    "conditions": [],
+                    "actions": [
+                        {
+                            "_id": "7RdcbRCuBkCtr6zCg",
+                            "input_values": [
+                                {
+                                    "datasourceType": "connector",
+                                    "valueType": {
+                                        "isReadable": true,
+                                        "isWritable": false,
+                                        "baseType": "connectorValue"
+                                    },
+                                    "connectorId": "poNDGgpb3rpctyk3Q",
+                                    "functionId": "3C8eEbWBGCTgzXX4g"
+                                },
+                                {
+                                    "datasourceType": "static",
+                                    "valueType": {
+                                        "baseType": "string",
+                                        "isReadable": true,
+                                        "isWritable": false
+                                    },
+                                    "value": "FH1436",
+                                    "mentionMap": {}
+                                },
+                                {
+                                    "datasourceType": "variable",
+                                    "variableId": "ZyTw2BjgSCBvdcizw",
+                                    "path": [],
+                                    "valueType": {
+                                        "baseType": {
+                                            "state": "string",
+                                            "color": "string",
+                                            "start_time": "string",
+                                            "main_program": "string",
+                                            "active_program": "string",
+                                            "comment": "string",
+                                            "duration": "string",
+                                            "utilization": "string",
+                                            "name": "string",
+                                            "color2": "imageUrl",
+                                            "asset_id": "string"
+                                        },
+                                        "isReadable": true,
+                                        "isWritable": true
+                                    }
+                                }
+                            ],
+                            "type": "run_connector_function"
+                        },
+                        {
+                            "_id": "4zj4g7tBGRgoKmfbw",
+                            "input_values": [
+                                {
+                                    "datasourceType": "connector",
+                                    "valueType": {
+                                        "isReadable": true,
+                                        "isWritable": false,
+                                        "baseType": "connectorValue"
+                                    },
+                                    "connectorId": "poNDGgpb3rpctyk3Q",
+                                    "functionId": "3C8eEbWBGCTgzXX4g"
+                                },
+                                {
+                                    "datasourceType": "static",
+                                    "valueType": {
+                                        "baseType": "string",
+                                        "isReadable": true,
+                                        "isWritable": false
+                                    },
+                                    "value": "FH1537",
+                                    "mentionMap": {}
+                                },
+                                {
+                                    "datasourceType": "variable",
+                                    "variableId": "A6J8qnPbpC9fX6fs5",
+                                    "path": [],
+                                    "valueType": {
+                                        "baseType": {
+                                            "state": "string",
+                                            "color": "string",
+                                            "start_time": "string",
+                                            "main_program": "string",
+                                            "active_program": "string",
+                                            "comment": "string",
+                                            "duration": "string",
+                                            "utilization": "string",
+                                            "name": "string",
+                                            "color2": "imageUrl",
+                                            "asset_id": "string"
+                                        },
+                                        "isReadable": true,
+                                        "isWritable": true
+                                    }
+                                }
+                            ],
+                            "type": "run_connector_function"
+                        }
+                    ]
+                }
+            ],
+            "description": "Update",
+            "event": {
+                "_id": "eBDn8bNcvXEouekm5",
+                "type": "step_open"
+            }
+        },
+        {
+            "_id": "4zGfRGzihXW8nYytS",
+            "clauses": [
+                {
+                    "_id": "r2nmmp2zAQpd2yHqy",
+                    "type": "and",
+                    "conditions": [],
+                    "actions": [
+                        {
+                            "_id": "CDAGBGYdJRTJt2ArC",
+                            "input_values": [],
+                            "type": "complete_process"
+                        },
+                        {
+                            "_id": "CkNGAcWvnPBC7AR9A",
+                            "input_values": [
+                                {
+                                    "datasourceType": "step",
+                                    "valueType": {
+                                        "isReadable": true,
+                                        "isWritable": false,
+                                        "baseType": "step"
+                                    },
+                                    "stepId": "s6kikERLEwac5a7KG"
+                                }
+                            ],
+                            "type": "go_to_step"
+                        }
+                    ]
+                }
+            ],
+            "event": {
+                "_id": "qan9hugCLdCnfLPzc",
+                "type": "interval",
+                "args": {
+                    "interval": 30
+                }
+            },
+            "description": "Complete and Update Data"
+        },
+        {
+            "_id": "iQQuqYWEkDRXSbdFB",
+            "clauses": [
+                {
+                    "_id": "Ayu6JMGAeHK2toM8u",
+                    "type": "and",
+                    "conditions": [
+                        {
+                            "_id": "kQxJxvAjbDns9unrw",
+                            "input_values": [
+                                {
+                                    "datasourceType": "variable",
+                                    "variableId": "7FgSoNJhZbBWwy2ip",
+                                    "path": ["blank_square"],
+                                    "valueType": {
+                                        "baseType": "imageUrl",
+                                        "isReadable": true,
+                                        "isWritable": false
+                                    }
+                                }
+                            ],
+                            "type": "is_blank"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "_id": "hwkY6cEg4pxP6wjx4",
+                            "input_values": [
+                                {
+                                    "datasourceType": "connector",
+                                    "valueType": {
+                                        "isReadable": true,
+                                        "isWritable": false,
+                                        "baseType": "connectorValue"
+                                    },
+                                    "connectorId": "poNDGgpb3rpctyk3Q",
+                                    "functionId": "Wy7X7ahe8w99dE32a"
+                                },
+                                {
+                                    "datasourceType": "variable",
+                                    "variableId": "7FgSoNJhZbBWwy2ip",
+                                    "path": [],
+                                    "valueType": {
+                                        "baseType": {
+                                            "blank_square": "imageUrl"
+                                        },
+                                        "isReadable": true,
+                                        "isWritable": true
+                                    }
+                                }
+                            ],
+                            "type": "run_connector_function"
+                        }
+                    ]
+                }
+            ],
+            "description": "Get Blank Square",
+            "event": {
+                "_id": "pNZBaGXTsEo4Zwy9x",
+                "type": "step_open"
+            }
+        },
+        {
+            "_id": "xbnCRSTqaiRJKxuPZ",
+            "clauses": [
+                {
+                    "_id": "mjZJQ6iq2F8PP6CYu",
+                    "type": "and",
+                    "conditions": [],
+                    "actions": [
+                        {
+                            "_id": "KAXnMwmASKCXNwHtC",
+                            "input_values": [
+                                {
+                                    "datasourceType": "step",
+                                    "valueType": {
+                                        "isReadable": true,
+                                        "isWritable": false,
+                                        "baseType": "step"
+                                    },
+                                    "stepId": "R48b8QRWWtxfyuAe5"
+                                }
+                            ],
+                            "type": "go_to_step"
+                        }
+                    ]
+                }
+            ],
+            "description": "Return",
+            "event": {
+                "_id": "hnCJa47rH8vrEzpWG",
+                "type": "step_open"
+            }
+        }
+    ],
+    "analyses": [],
+    "dashboards": [
+        {
+            "_id": "2eGkirkttb8XRYRdG",
+            "columns": [
+                {
+                    "width": 8,
+                    "items": [],
+                    "_id": "XgNACZt3g3v7JwFS5"
+                },
+                {
+                    "width": 8,
+                    "items": [],
+                    "_id": "Zxsdv7Ccr2DAbutnA"
+                },
+                {
+                    "width": 8,
+                    "items": [],
+                    "_id": "6uYpXZ8xnrs5vvPrT"
+                }
+            ],
+            "min_column_width": 4,
+            "number_columns_in_grid": 24
+        }
+    ]
+}
