@@ -1,40 +1,100 @@
 const utils = require('./modules/get-csv-data.js');
-let templateProcess = require('./sample_data/dashboard-template-2.json');
+let templateProcess = require('./sample_data/template_dashboard_2.json');
 
 // Set process name
 templateProcess.processVersionSets[0].name =
     'Machine Dashboard - ' + new Date();
 
-// Create variables for each item in array (array of asset_ids)
+// // Create variables for each item in array (array of asset_ids)
+// // For all machines currently providing data as of 10/26/18
+// let asset_ids = [
+//     'FH0895',
+//     'FH0831',
+//     'FH1537',
+//     'FH0829',
+//     'FH0830',
+//     'FH0828',
+//     'FH0722',
+//     'FH1628',
+//     'FH1453',
+//     'FH1454',
+//     'FH1618',
+//     'FH1619',
+//     'FH0897',
+//     'FH1102',
+//     'FH0896',
+//     'FH0825',
+//     'FH0816',
+//     'FH0949',
+//     'FH0817',
+//     'FH1436',
+//     'FH1437',
+//     'FH0815',
+//     'FH0822',
+//     'FH0823',
+//     'FH0815'
+// ];
+
+let machineVariableType = {
+    state: 'string',
+    color: 'string',
+    start_time: 'string',
+    main_program: 'string',
+    active_program: 'string',
+    comment: 'string',
+    duration: 'string',
+    utilization: 'string',
+    name: 'string',
+    color2: 'imageUrl',
+    asset_id: 'string'
+};
+
+// all machines as of 10/26/18
 let asset_ids = [
-    'FH0895',
     'FH0831',
+    'FH0895',
+    'FH0830',
     'FH1537',
     'FH0829',
-    'FH0830',
-    'FH0828',
     'FH0722',
-    'FH1628',
-    'FH1453',
+    'FH0828',
+    'FH1438',
+    'FH0898',
+    'FH1301',
     'FH1454',
     'FH1618',
+    'FH1628',
     'FH1619',
+    'FH1453',
+    'FH0896',
     'FH0897',
     'FH1102',
-    'FH0896',
-    'FH0825',
+    'FH1675',
+    'FH1664',
+    'FH1638',
+    'FH1651',
+    'FH1434',
+    'FH1435',
+    'FH0181',
+    'FH0182',
+    'FH0194',
+    'FH0179',
+    'FH0503',
     'FH0816',
-    'FH0949',
     'FH0817',
+    'FH0822',
+    'FH0823',
+    'FH0825',
     'FH1436',
-    'FH0815',
-    'FH0823'
+    'FH1437',
+    'FH0949',
+    'FH0815'
 ];
 
 function createDashboard(template, machines) {
     addActionsToTrigger(template, 'Update', trigger => {
         let processId = template.processVersionSets[0].versions[0].process;
-        let columns = 7;
+        let columns = 10;
         let column = 0;
         let rows = 4;
         let row = 0;
@@ -54,6 +114,7 @@ function createDashboard(template, machines) {
                 top: 0.05
             };
 
+            // array of variable subfields to render as widgets
             let subField = [
                 { name: 'color2', padding: 0 },
                 {
@@ -90,9 +151,9 @@ function createDashboard(template, machines) {
                             : top,
                     type: 'variable_formattable',
                     widget_version_set: makeid(),
-                    font_size: 40,
+                    font_size: 20,
                     width: width,
-                    height: width,
+                    height: e.name == 'color2' ? width : width / lines,
                     font_color:
                         e.font_color != undefined ? e.font_color : '#182339',
                     variable: machineVariable._id,
@@ -159,19 +220,7 @@ function buildMachineVariable(assetId, processId) {
         _id: makeid(),
         process: processId,
         name: assetId,
-        type: {
-            state: 'string',
-            color: 'string',
-            start_time: 'string',
-            main_program: 'string',
-            active_program: 'string',
-            comment: 'string',
-            duration: 'string',
-            utilization: 'string',
-            name: 'string',
-            color2: 'imageUrl',
-            asset_id: 'string'
-        },
+        type: machineVariableType,
         persistent: true,
         variable_version_set: makeid()
     };
@@ -210,19 +259,7 @@ function buildTriggerAction(
                 variableId: variableId,
                 path: [],
                 valueType: {
-                    baseType: {
-                        state: 'string',
-                        color: 'string',
-                        start_time: 'string',
-                        main_program: 'string',
-                        active_program: 'string',
-                        comment: 'string',
-                        duration: 'string',
-                        utilization: 'string',
-                        name: 'string',
-                        color2: 'imageUrl',
-                        asset_id: 'string'
-                    },
+                    baseType: machineVariableType,
                     isReadable: true,
                     isWritable: true
                 }
