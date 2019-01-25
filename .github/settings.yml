@@ -1,0 +1,44 @@
+repository:
+    # See https://developer.github.com/v3/repos/#edit for all available settings.
+
+    # Either `true` to make the repository private, or `false` to make it public.
+    private: true
+
+    # Either `true` to enable issues for this repository, `false` to disable them.
+    has_issues: false
+
+    # Either `true` to enable the wiki for this repository, `false` to disable it.
+    has_wiki: false
+
+    has_projects: false
+
+    # Updates the default branch for this repository.
+    default_branch: master
+
+    # Either `true` to allow merging pull requests with a merge commit, or `false`
+    # to prevent merging pull requests with merge commits.
+    allow_merge_commit: false
+
+    # Either `true` to allow squash-merging pull requests, or `false` to prevent
+    # squash-merging.
+    allow_squash_merge: true
+
+    # Either `true` to allow rebase-merging pull requests, or `false` to prevent
+    # rebase-merging.
+    allow_rebase_merge: false
+
+teams:
+    - name: developers
+      permission: admin
+    - name: tulip-build
+      permission: push
+    - name: if-robots
+      permission: push
+
+branches:
+    - name: master
+      protection:
+          required_pull_request_reviews: null
+          required_status_checks: null
+          enforce_admins: false
+          restrictions: null
